@@ -38,20 +38,30 @@ export default function DownloadSection() {
 
   const fetchRelease = useCallback(async () => {
     try {
-      const response = await fetch("/api/releases");
-      const data: ReleaseData = await response.json();
-      setRelease(data);
+      const response = await fetch("/version.json");
+      const data = await response.json();
+      setRelease({
+        success: true,
+        version: data.versionName || "1.0.0",
+        name: "مع الله",
+        downloadUrl: data.downloadUrl || null,
+        downloadCount: 0,
+        releaseNotes: data.releaseNotes || "",
+        publishDate: "",
+        releaseUrl: "https://github.com/MohmedYahiaAlmhdi/ma-allah/releases/latest",
+        isNewer: false,
+      });
     } catch (error) {
       console.error("خطأ في جلب معلومات الإصدار:", error);
       setRelease({
         success: false,
         version: "1.0.0",
         name: "مع الله",
-        downloadUrl: null,
+        downloadUrl: "https://github.com/MohmedYahiaAlmhdi/ma-allah/releases/latest",
         downloadCount: 0,
         releaseNotes: "",
         publishDate: "",
-        releaseUrl: "",
+        releaseUrl: "https://github.com/MohmedYahiaAlmhdi/ma-allah/releases/latest",
         isNewer: false,
       });
     } finally {
@@ -193,19 +203,19 @@ export default function DownloadSection() {
                     <div className="bg-secondary/50 rounded-xl p-4 text-center">
                       <Download className="w-5 h-5 text-gold mx-auto mb-2" />
                       <p className="text-xs text-muted-foreground font-arabic mb-1">
-                        عدد التحميلات
+                        المنصة
                       </p>
                       <p className="text-sm font-medium text-foreground font-arabic">
-                        {formatDownloadCount(release.downloadCount)}
+                        أندرويد (APK)
                       </p>
                     </div>
                     <div className="bg-secondary/50 rounded-xl p-4 text-center col-span-2 sm:col-span-1">
                       <HardDrive className="w-5 h-5 text-gold mx-auto mb-2" />
                       <p className="text-xs text-muted-foreground font-arabic mb-1">
-                        المنصة
+                        حجم التطبيق
                       </p>
                       <p className="text-sm font-medium text-foreground font-arabic">
-                        أندرويد (APK)
+                        ~25 MB
                       </p>
                     </div>
                   </div>
@@ -307,8 +317,7 @@ export default function DownloadSection() {
                             ملاحظة
                           </p>
                           <p className="text-amber-600/80 dark:text-amber-400/80 font-arabic text-sm mt-1">
-                            تأكد من تعيين متغير NEXT_PUBLIC_GITHUB_REPO في ملف
-                            .env.local لتفعيل جلب معلومات الإصدارات تلقائياً.
+                            تعذر جلب معلومات الإصدار تلقائياً. يمكنك التحميل مباشرة من GitHub Releases.
                           </p>
                         </div>
                       </div>
