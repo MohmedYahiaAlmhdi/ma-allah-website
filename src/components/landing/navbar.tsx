@@ -75,7 +75,7 @@ export default function Navbar() {
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl overflow-hidden border-2 border-gold/30 shadow-md">
               <img
-                src="/icon.png"
+                src="/ma-allah-website/icon.png"
                 alt="مع الله"
                 className="w-full h-full object-cover"
               />
