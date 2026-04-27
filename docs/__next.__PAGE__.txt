@@ -3,7 +3,7 @@
 3:I[87280,["/ma-allah-website/_next/static/chunks/0ya~67jj6owij.js","/ma-allah-website/_next/static/chunks/0g-zus7q2aylg.js","/ma-allah-website/_next/static/chunks/0hjjdl2o0cota.js","/ma-allah-website/_next/static/chunks/01ee5oh1fe.e2.js"],"default"]
 6:I[67051,["/ma-allah-website/_next/static/chunks/0ya~67jj6owij.js","/ma-allah-website/_next/static/chunks/0g-zus7q2aylg.js","/ma-allah-website/_next/static/chunks/0hjjdl2o0cota.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/ma-allah-website/_next/static/chunks/01ee5oh1fe.e2.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"1yyD-EN1qNz_6zayBVWHR"}
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/ma-allah-website/_next/static/chunks/01ee5oh1fe.e2.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"eCU9e67dVwUmB4_VX5ERz"}
 4:{}
 5:"$0:rsc:props:children:0:props:serverProvidedParams:params"
 8:null
