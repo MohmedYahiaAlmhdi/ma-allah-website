@@ -38,7 +38,7 @@ export default function DownloadSection() {
 
   const fetchRelease = useCallback(async () => {
     try {
-      const response = await fetch("/version.json");
+      const response = await fetch("/ma-allah-website/version.json");
       const data = await response.json();
       setRelease({
         success: true,

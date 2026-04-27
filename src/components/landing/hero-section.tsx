@@ -54,7 +54,7 @@ export default function HeroSection() {
       {/* صورة الخلفية */}
       <div className="absolute inset-0 opacity-20">
         <img
-          src="/hero-bg.png"
+          src="/ma-allah-website/icon.png"
           alt=""
           className="w-full h-full object-cover"
           loading="eager"
@@ -195,7 +195,7 @@ export default function HeroSection() {
                   {/* محتوى الشاشة (صورة التطبيق) */}
                   <div className="aspect-[9/19] bg-navy">
                     <img
-                      src="/hero-phone.png"
+                      src="/ma-allah-website/icon.png"
                       alt="تطبيق مع الله - حاسوبك الروحي اليومي"
                       className="w-full h-full object-contain"
                     />

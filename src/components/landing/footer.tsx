@@ -1,6 +1,6 @@
 "use client";
 
-import { Github, Heart, ExternalLink } from "lucide-react";
+import { ExternalLink, Github, Heart } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -15,7 +15,7 @@ export default function Footer() {
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 rounded-xl overflow-hidden border-2 border-gold/30 shadow-md">
                 <img
-                  src="/icon.png"
+                  src="/ma-allah-website/icon.png"
                   alt="مع الله"
                   className="w-full h-full object-cover"
                 />
@@ -60,7 +60,7 @@ export default function Footer() {
               محاسبة أنفسهم وتحسين مستواهم الروحي.
             </p>
             <a
-              href="https://github.com/MohmedYahiaAlmhdi/-"
+              href="https://github.com/MohmedYahiaAlmhdi/ma-allah"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-muted-foreground hover:text-gold transition-colors duration-200 text-sm"
