@@ -1,0 +1,214 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-arabic: var(--font-amiri);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-navy: #1A2332;
+  --color-gold: #D4A843;
+  --color-gold-light: #E8C975;
+  --color-gold-dark: #B8922F;
+  --color-purple: #6B4C9A;
+  --color-purple-light: #8B6BB5;
+  --color-purple-dark: #523A78;
+  --color-cream: #F8F6F0;
+  --color-cream-dark: #EDE9DD;
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: #F8F6F0;
+  --foreground: #1A2332;
+  --card: #FFFFFF;
+  --card-foreground: #1A2332;
+  --popover: #FFFFFF;
+  --popover-foreground: #1A2332;
+  --primary: #1A2332;
+  --primary-foreground: #F8F6F0;
+  --secondary: #EDE9DD;
+  --secondary-foreground: #1A2332;
+  --muted: #EDE9DD;
+  --muted-foreground: #6B7280;
+  --accent: #D4A843;
+  --accent-foreground: #1A2332;
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: #E5E0D5;
+  --input: #E5E0D5;
+  --ring: #D4A843;
+  --chart-1: #1A2332;
+  --chart-2: #D4A843;
+  --chart-3: #6B4C9A;
+  --chart-4: #E8C975;
+  --chart-5: #8B6BB5;
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #1A2332;
+  --sidebar-primary: #1A2332;
+  --sidebar-primary-foreground: #F8F6F0;
+  --sidebar-accent: #EDE9DD;
+  --sidebar-accent-foreground: #1A2332;
+  --sidebar-border: #E5E0D5;
+  --sidebar-ring: #D4A843;
+}
+
+.dark {
+  --background: #0F1720;
+  --foreground: #F8F6F0;
+  --card: #1A2332;
+  --card-foreground: #F8F6F0;
+  --popover: #1A2332;
+  --popover-foreground: #F8F6F0;
+  --primary: #F8F6F0;
+  --primary-foreground: #1A2332;
+  --secondary: #243044;
+  --secondary-foreground: #F8F6F0;
+  --muted: #243044;
+  --muted-foreground: #9CA3AF;
+  --accent: #D4A843;
+  --accent-foreground: #1A2332;
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: #2D3B50;
+  --input: #2D3B50;
+  --ring: #D4A843;
+  --chart-1: #F8F6F0;
+  --chart-2: #D4A843;
+  --chart-3: #8B6BB5;
+  --chart-4: #E8C975;
+  --chart-5: #6B4C9A;
+  --sidebar: #1A2332;
+  --sidebar-foreground: #F8F6F0;
+  --sidebar-primary: #F8F6F0;
+  --sidebar-primary-foreground: #1A2332;
+  --sidebar-accent: #243044;
+  --sidebar-accent-foreground: #F8F6F0;
+  --sidebar-border: #2D3B50;
+  --sidebar-ring: #D4A843;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* تخصيص أشرطة التمرير */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #D4A843;
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #B8922F;
+}
+
+/* أنماط مخصصة للنص العربي */
+.arabic-text {
+  font-family: var(--font-amiri), 'Amiri', serif;
+  line-height: 1.8;
+}
+
+/* تأثير التوهج الذهبي */
+.gold-glow {
+  box-shadow: 0 0 20px rgba(212, 168, 67, 0.3);
+}
+
+.gold-glow-hover:hover {
+  box-shadow: 0 0 30px rgba(212, 168, 67, 0.5);
+}
+
+/* نمط البطاقة */
+.islamic-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.islamic-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #D4A843, #6B4C9A, #D4A843);
+}
+
+/* تأثير الخلفية */
+.islamic-gradient {
+  background: linear-gradient(135deg, #1A2332 0%, #2D3B50 50%, #1A2332 100%);
+}
+
+/* حركة الظهور */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* تأثير النجوم */
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-twinkle {
+  animation: twinkle 3s ease-in-out infinite;
+}
