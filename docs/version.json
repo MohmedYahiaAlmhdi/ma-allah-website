@@ -1,7 +1,7 @@
 {
-  "versionCode": 2,
-  "versionName": "1.2.0",
-  "downloadUrl": "https://www.mediafire.com/file/8zbk5o7etpwt4ry/ma-allah-v1.2.0-arm64.apk/file",
-  "releaseNotes": "الإطلاق الأول لتطبيق مع الله",
+  "versionCode": 4,
+  "versionName": "1.3.0",
+  "downloadUrl": "https://www.mediafire.com/file/9lik1fkvd63gvpz/ma_allah_v1.3.0.apk/file",
+  "releaseNotes": "إضافة قسم الاستغفار مع عداد 100 مرة وزر الإتمام المباشر + شريط عداد الثواني في عداد الحياة",
   "forceUpdate": false
 }
