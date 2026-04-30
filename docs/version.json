@@ -1,7 +1,7 @@
 {
-  "versionCode": 4,
-  "versionName": "1.3.0",
-  "downloadUrl": "https://www.mediafire.com/file/0afuiaaumirm2x3/Ma-Allah-v1.3.0.apk/file",
-  "releaseNotes": "إضافة قسم الاستغفار مع عداد 100 مرة وزر الإتمام المباشر + شريط عداد الثواني في عداد الحياة و الحمد لله ",
+  "versionCode": 5,
+  "versionName": "1.4.0",
+  "downloadUrl": "https://www.mediafire.com/file/xqif138g8dnbjeu/Ma-Allah-v1.4.0.apk/file",
+  "releaseNotes": "إعادة تصميم شاشة تاريخ الميلاد بعجلات اختيار احترافية + تطوير شاشة الإعدادات (المعلومات الشخصية، الأمان، البيانات) + إضافة تصدير واستيراد البيانات + إصلاح مسار المصادقة والتنقل + تحسين حساب العمر بالتفصيل",
   "forceUpdate": false
 }
