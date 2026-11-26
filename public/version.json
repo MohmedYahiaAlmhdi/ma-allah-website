@@ -1,7 +1,8 @@
 {
-  "versionCode": 5,
-  "versionName": "1.4.0",
-  "downloadUrl": "https://www.mediafire.com/file/xqif138g8dnbjeu/Ma-Allah-v1.4.0.apk/file",
-  "releaseNotes": "إعادة تصميم شاشة تاريخ الميلاد بعجلات اختيار احترافية + تطوير شاشة الإعدادات (المعلومات الشخصية، الأمان، البيانات) + إضافة تصدير واستيراد البيانات + إصلاح مسار المصادقة والتنقل + تحسين حساب العمر بالتفصيل",
-  "forceUpdate": false
+    "versionCode":  2006,
+    "versionName":  "1.6.0",
+    "downloadUrl":  "https://github.com/MohmedYahiaAlmhdi/ma-allah-website/releases/download/v1.6.0/Ma-Allah-v1.6.0.apk",
+    "releaseNotes":  "رحلة التفكر والتزكية المرتبطة بأسماء الله الحسنى، وتحسينات التصميم والقراءة والأداء.",
+    "sha256":  "e8d8e71384fce74798e9f252092ea1defe2733b2f47cc834b18d840735daadc2",
+    "forceUpdate":  false
 }
